@@ -1,0 +1,33 @@
+###
+GET localhost:8080/books
+
+###
+GET localhost:8080/books/2
+
+###
+POST localhost:8080/books
+Content-Type: application/json
+
+{
+  "isbn": "2078951409",
+  "title": "Anwa Karenina",
+  "author": "Leo Tolstoy",
+  "publisher": "MG",
+  "type": "classic"
+}
+
+###
+DELETE localhost:8080/books/2
+
+###
+PUT localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 5,
+  "isbn": "2078951409",
+  "title": "Anna Karenina",
+  "author": "Leo Tolstoy",
+  "publisher": "MG",
+  "type": "classic"
+}
